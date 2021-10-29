@@ -1,6 +1,15 @@
 .section-doing {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  @media screen and (max-width: 1199px) {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0px;
+    overflow: hidden;
+    border: 0px;
+    clip: rect(0 0 0 0);
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
   // .section-doing_title
 
   &__title {
@@ -11,16 +20,11 @@
     color: var(--secondary-text-color);
     margin-bottom: 50px;
   }
-
-  // .section-doing_list
-
-  &__list {
-    display: flex;
-    padding-left: 0px;
-  }
 }
 
 .doing-list {
+  display: flex;
+  padding-left: 0px;
   // .doing-list_item
 
   &__item:not(:nth-last-child(n + 3)) {

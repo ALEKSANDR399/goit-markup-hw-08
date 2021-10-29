@@ -1,5 +1,16 @@
 .subscribe {
-  margin-left: 93px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    margin: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 0px;
+  }
+  // margin-left: 93px;
 
   // .subscribe_title
 
@@ -9,16 +20,33 @@
     font-size: 14px;
     line-height: 1.14;
     margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+      margin-right: auto;
+    }
   }
 
   // .subscribe_form
 
   &__form {
     background-color: var(--secondary-color);
-    display: flex;
   }
 }
 .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    margin-left: -12px;
+    align-items: flex-start;
+  }
   // .form_email
 
   &__email {
@@ -26,8 +54,13 @@
     height: 50px;
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
     &:focus {
       border-color: var(--link-hover-color);
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 2 - 12px);
+      margin-left: 12px;
     }
   }
   // .form_input
@@ -73,15 +106,13 @@
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
     letter-spacing: 0.06em;
     background-color: var(--link-hover-color);
     color: var(--basic-color);
     border-radius: 4px;
     width: 200px;
     height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border: none;

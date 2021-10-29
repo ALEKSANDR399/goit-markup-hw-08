@@ -9,19 +9,20 @@
     line-height: 1.16;
     text-align: center;
     color: var(--secondary-text-color);
-  }
-
-  // .section-partners_list
-
-  &__list {
-    display: flex;
-    margin-top: 50px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
   }
 }
 
 .partners-list {
   display: flex;
-  margin-top: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
   // .partners-list_items
 
   &__items {
@@ -29,9 +30,25 @@
     height: 92px;
     border-radius: 4px;
     display: flex;
-    & + & {
+    flex-basis: calc(100% / 2 - 30px);
+    &:not(:nth-child(2n + 1)) {
       margin-left: 30px;
     }
+    &:not(:nth-child(n + 5)) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 3 - 30px);
+      &:not(:nth-child(3n + 4)) {
+        margin-left: 30px;
+      }
+      @media screen and (min-width: 1200px) {
+        flex-basis: calc(100% / 6 - 30px);
+      }
+    }
+    // & + & {
+    //   margin-left: 30px;
+    // }
   }
 
   // .partners-list_link

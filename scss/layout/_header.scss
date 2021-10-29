@@ -73,7 +73,7 @@
 
 .contacts-list {
   display: flex;
-  flex-wrap: wrap;
+  align-items: baseline;
   // .contacts-list__mail-item
 
   &__mail-item {
@@ -125,6 +125,8 @@
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--basic-text-color);
+    display: flex;
+    align-items: center;
     &:hover,
     &:focus {
       color: var(--link-hover-color);
