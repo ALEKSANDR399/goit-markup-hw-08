@@ -1,0 +1,109 @@
+.subscribe {
+  margin-left: 93px;
+
+  // .subscribe_title
+
+  &__title {
+    color: var(--basic-color);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 20px;
+  }
+
+  // .subscribe_form
+
+  &__form {
+    background-color: var(--secondary-color);
+    display: flex;
+  }
+}
+.form {
+  // .form_email
+
+  &__email {
+    width: 358px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    &:focus {
+      border-color: var(--link-hover-color);
+    }
+  }
+  // .form_input
+
+  &__input {
+    height: 50px;
+    width: 358px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: var(--basic-color);
+    outline: none;
+    &:focus {
+      border-color: var(--link-hover-color);
+    }
+    &::placeholder {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: calc(20 / 16);
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+      padding-left: 16px;
+    }
+    &:focus::placeholder {
+      color: var(--link-hover-color);
+    }
+  }
+
+  // .form_button
+
+  &__button {
+    margin-left: 12px;
+  }
+}
+.clik {
+  // .clik_button
+
+  &__button {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: var(--link-hover-color);
+    color: var(--basic-color);
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    &:hover,
+    &:focus {
+      background-color: var(--button-bgc);
+      color: var(--secondary-text-color);
+      cursor: pointer;
+    }
+  }
+
+  // .clik_icons
+
+  &__icons {
+    width: 24px;
+    height: 24px;
+    fill: var(--header-text-color);
+    margin-left: 10px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .clik-button:hover &,
+    .clik-button:focus & {
+      fill: var(--secondary-text-color);
+    }
+  }
+}
