@@ -21,10 +21,10 @@
     max-width: 270px;
   }
 }
-.personal-list {
+.personal-footer-list {
   display: flex;
   justify-content: center;
-  // .personal-list_item
+  // .personal-footer-list_item
 
   &__item {
     width: 44px;
@@ -34,7 +34,7 @@
     }
   }
 
-  // .personal-list_link
+  // .personal-footer-list_link
 
   &__link {
     width: 100%;
@@ -52,7 +52,7 @@
     }
   }
 
-  // .personal-list_icons
+  // .personal-footer-list_icons
 
   &__icons {
     width: 20px;
