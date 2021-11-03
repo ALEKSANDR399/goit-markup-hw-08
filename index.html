@@ -18,20 +18,18 @@
     <title>ДЗ№8</title>
 </head>
 <body>
-    <!-- <header class="header"> 
+    <header class="header"> 
         <div class="container header-container">
             <div class="header-logo">
                 <a href="" class="header-logo__link">Web<span class="header-logo__color-style">Studio</span></a>
             </div>
             <nav class="header-nav nav">
-                
                 <ul class="nav_list block-nav">
                     <li class="block-nav__item"><a href="" class=" block-nav__link link current">Студия</a></li>
                     <li class="block-nav__item"><a href="portfolio.html" class=" block-nav__link link">Портфолио</a></li>
                     <li class="block-nav__item"><a href="" class=" block-nav__link link ">Контакты</a></li>
                 </ul>
             </nav>
-            
             <ul class="header-contacts contacts-list">
                 <li class="contacts-list__mail-item">
                     <a href="mailto:info@devstudio.com" class="contacts-list__mail-link link">
@@ -47,18 +45,50 @@
                     </svg>
                     +380961111111</a></li>
             </ul>
+            <button type="button" class="menu-open-btn">
+                <svg class="menu-open-btn__icon">
+                    <use href="./img/icons.svg#icon-menu_24px" width="24" height="16"></use>
+                </svg>
+            </button>
         </div>
-    </header> -->
+        <div class="mob-menu is-hidden">
+            <div class="container container-mob-menu">
+                <button type="button" class="mob-menu__btn-close">
+                    <svg class="mob-menu__icon-close">
+                        <use href="./img/sprite.svg#icon-close" width="11" height="11">
+                        </use>
+                    </svg>
+                </button>
+                <ul class="mob-menu__list">
+                    <li class="mob-menu__item"><a href="" class="mob-menu__link link">Студия</a></li>
+                    <li class="mob-menu__item"><a href="" class="mob-menu__link link">Портфолио</a></li>
+                    <li class="mob-menu__item"><a href="" class="mob-menu__link link">Контакты</a></li>
+                </ul>
+                <div class="mob-menu__bottom">
+                    <ul class="mob-menu__contacts-list">
+                        <li class="mob-menu__contacts-item"><a href="" class="mob-menu__contacts-link link">+38 096 111 11 11</a></li>
+                        <li class="mob-menu__contacts-item"><a href="" class="mob-menu__contacts-link link">info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="mob-menu__social-list">
+                        <li class="mob-menu__social-item"><a href="" class="mob-menu__social-link link">Instagram</a></li>
+                        <li class="mob-menu__social-item"><a href="" class="mob-menu__social-link link">Twitter</a></li>
+                        <li class="mob-menu__social-item"><a href="" class="mob-menu__social-link link">Facebook</a></li>
+                        <li class="mob-menu__social-item"><a href="" class="mob-menu__social-link link">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
     <main>
-        <!-- <section class="hero">
+        <section class="hero">
             <div class="container hero-container">
-                <h1 class="hero__title">ЭФФЕКТИВНОЕ РЕШЕНИЕ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+                <h1 class="hero__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
                 <div class="hero__button order-service">
                     <button type="button" class="order-service_button" data-modal-open>Заказать услугу</button>
                 </div>
             </div>
-        </section> -->
-        <!-- <section class="section-skills">
+        </section>
+        <section class="section-skills">
             <div class="container">
                 <ul class="section-skills__list skills-list">
                     <li class="skills-list__item">
@@ -107,7 +137,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <section class="section-doing ">
             <div class="container">
                 <h2 class="section-doing__title">Чем мы занимаемся</h2>
@@ -133,12 +163,21 @@
                 </ul>
             </div>
         </section>
-        <!-- <section class="section-personal">
+        <section class="section-personal">
             <div class="container">
                 <h2 class="section-personal__title">Наша команда</h2>
                 <ul class="section-personal__list personal-list">
                     <li class="personal-list__foto-item item__box-styles">
-                        <img src="img/picture4.jpg" alt="foto1" width="450" height="460">
+                        <picture>
+                            <source srcset="./img/team1-desctop-1x.jpg 1x, ./img/team1-desctop-2x.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source srcset="./img/team1-tab-1x.jpg 1x, ./img/team1-tab-2x.jpg 2x"
+                                media="(min-width:768px)">
+                            <source srcset="./img/team1-mob-1x.jpg 1x, ./img/team1-mob-2x.jpg 2x"
+                                media="(min-width:320px)">
+                            <img class="team-list__img" src="./img/team1-desctop-1x.jpg" alt="Фото Игорь Демьяненко"
+                                aria-label="Игорь Демьяненко">
+                        </picture>
                         <div class="personal-list__introduce personal-introduce">
                             <h3 class="personal-introduce__name">Игорь Демьяненко</h3>
                             <p class="personal-introduce__proffesion">Product Designer</p>
@@ -179,7 +218,12 @@
                         </div>
                     </li>
                     <li class="personal-list__foto-item item__box-styles">
-                        <img src="img/picture5.jpg" alt="foto2" width="450" height="460">
+                        <picture>
+                            <source srcset="./img/team2-desctop-1x.jpg 1x, ./img/team2-desctop-2x.jpg 2x" media="(min-width:1200px)">
+                            <source srcset="./img/team2-tab-1x.jpg 1x, ./img/team2-tab-2x.jpg 2x" media="(min-width:768px)">
+                            <source srcset="./img/team2-mob-1x.jpg 1x, ./img/team2-mob-2x.jpg 2x" media="(min-width:320px)">
+                            <img class="team-list__img" src="./img/team2-desctop-1x.jpg" alt="Фото Ольга Репина" aria-label="Ольга Репина">
+                        </picture>
                         <div class="personal-list__introduce personal-introduce">
                             <h3 class="personal-introduce__name">Ольга Репина</h3>
                             <p class="personal-introduce__proffesion">Frontend Developer</p>
@@ -220,7 +264,12 @@
                         </div>
                     </li>
                     <li class="personal-list__foto-item item__box-styles">
-                        <img src="img/picture6.jpg" alt="foto3" width="450" height="460">
+                        <picture>
+                            <source srcset="./img/team3-desctop-1x.jpg 1x, ./img/team3-desctop-2x.jpg 2x" media="(min-width:1200px)">
+                            <source srcset="./img/team3-tab-1x.jpg 1x, ./img/team3-tab-2x.jpg 2x" media="(min-width:768px)">
+                            <source srcset="./img/team3-mob-1x.jpg 1x, ./img/team3-mob-2x.jpg 2x" media="(min-width:320px)">
+                            <img class="team-list__img" src="./img/team3-desctop-1x.jpg" alt="Фото Николай Тарасов" aria-label="Николай Тарасов">
+                        </picture>
                         <div class="personal-list__introduce personal-introduce">
                             <h3 class="personal-introduce__name">Николай Тарасов</h3>
                             <p class="personal-introduce__proffesion">Marketing</p>
@@ -261,7 +310,12 @@
                         </div>
                     </li>
                     <li class="personal-list__foto-item item__box-styles">
-                        <img src="img/picture7.jpg" alt="foto4" width="450" height="460">
+                    <picture>
+                        <source srcset="./img/team4-desctop-1x.jpg 1x, ./img/team4-desctop-2x.jpg 2x" media="(min-width:1200px)">
+                        <source srcset="./img/team4-tab-1x.jpg 1x, ./img/team4-tab-2x.jpg 2x" media="(min-width:768px)">
+                        <source srcset="./img/team4-mob-1x.jpg 1x, ./img/team4-mob-2x.jpg 2x" media="(min-width:320px)">
+                        <img class="team-list__img" src="./img/team4-desctop-1x.jpg" alt="Фото Михаил Ермаков" aria-label="Михаил Ермаков">
+                    </picture>
                         <div class="personal-list__introduce personal-introduce">
                             <h3 class="personal-introduce__name">Михаил Ермаков</h3>
                             <p class="personal-introduce__proffesion">UI Designer</p>
@@ -303,8 +357,8 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
-        <!-- <section class="section-partners">
+        </section>
+        <section class="section-partners">
             <div class="container container-partners">
                 <h2 class="section-partners__title">Постоянные клиенты</h2>
                 <ul class="section-partners__list partners-list">
@@ -358,9 +412,9 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container footer-container">
             <div class="footer-contacts">
                 <div class="footer-logo bottom-logo">
@@ -434,7 +488,7 @@
                 </form>
             </div>
         </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="backdrop-modal modal" data-modal>
             <button type="button" class="modal__btn-close" data-modal-close>    
@@ -488,7 +542,7 @@
             </form>
         </div>
     </div>
-    <script src="./js/modal.js">
-    </script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script> 
 </body>
 </html>

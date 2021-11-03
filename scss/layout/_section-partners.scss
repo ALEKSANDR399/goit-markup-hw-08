@@ -10,13 +10,15 @@
 
   &__title {
     font-weight: bold;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.17;
     text-align: center;
     color: var(--secondary-text-color);
     margin-bottom: 30px;
     @media screen and (min-width: 1200px) {
       margin-bottom: 50px;
+      font-size: 36px;
+      line-height: 1.16;
     }
   }
 }
@@ -25,16 +27,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  @media screen and (min-width: 1200px) {
-    display: flex;
-  }
   // .partners-list__items
 
   &__items {
-    width: 170px;
     height: 92px;
     border-radius: 4px;
-    display: flex;
+    // display: flex;
     flex-basis: calc(100% / 2 - 30px);
 
     @media screen and (min-width: 768px) {
