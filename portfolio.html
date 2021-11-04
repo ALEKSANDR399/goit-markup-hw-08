@@ -13,14 +13,14 @@
         <title>ДЗ№7</title>
     </head>
     <body class="page">
-        <!-- <header class="header header-portfolio">
+        <header class="header header-portfolio">
             <div class="container header-container">
                 <div class="header-logo">
                     <a href="" class="header-logo__link">Web<span class="header-logo__color-style">Studio</span></a>
                 </div>
                 <nav class="header-nav nav">
                     <ul class="nav_list block-nav">
-                        <li class="block-nav__item"><a href="index.html" class=" block-nav__link link">Студия</a></li>
+                        <li class="block-nav__item"><a href="index.html" class=" block-nav__link link ">Студия</a></li>
                         <li class="block-nav__item"><a href="" class=" block-nav__link link current">Портфолио</a></li>
                         <li class="block-nav__item"><a href="" class=" block-nav__link link ">Контакты</a></li>
                     </ul>
@@ -40,8 +40,42 @@
                             </svg>
                             +380961111111</a></li>
                 </ul>
+                <button type="button" class="menu-open-btn">
+                    <svg class="menu-open-btn__icon">
+                        <use href="./img/icons.svg#icon-menu_24px" width="24" height="16"></use>
+                    </svg>
+                </button>
             </div>
-        </header>  -->
+            <div class="mob-menu is-hidden">
+                <div class="container container-mob-menu">
+                    <button type="button" class="mob-menu__btn-close">
+                        <svg class="mob-menu__icon-close">
+                            <use href="./img/sprite.svg#icon-close" width="11" height="11">
+                            </use>
+                        </svg>
+                    </button>
+                    <ul class="mob-menu__list">
+                        <li class="mob-menu__item"><a href="" class="mob-menu__link link">Студия</a></li>
+                        <li class="mob-menu__item"><a href="portfolio.html" class="mob-menu__link link">Портфолио</a></li>
+                        <li class="mob-menu__item"><a href="" class="mob-menu__link link">Контакты</a></li>
+                    </ul>
+                    <div class="mob-menu__bottom">
+                        <ul class="mob-menu__contacts-list">
+                            <li class="mob-menu__contacts-item"><a href="" class="mob-menu__contacts-link link">+38 096 111 11
+                                    11</a></li>
+                            <li class="mob-menu__contacts-item"><a href=""
+                                    class="mob-menu__contacts-link link">info@devstudio.com</a></li>
+                        </ul>
+                        <ul class="mob-menu__social-list">
+                            <li class="mob-menu__social-item"><a href="" class="mob-menu__social-link link">Instagram</a></li>
+                            <li class="mob-menu__social-item"><a href="" class="mob-menu__social-link link">Twitter</a></li>
+                            <li class="mob-menu__social-item"><a href="" class="mob-menu__social-link link">Facebook</a></li>
+                            <li class="mob-menu__social-item"><a href="" class="mob-menu__social-link link">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
         <main>
             <section class="portfolio">
                 <div class="container">
@@ -240,7 +274,7 @@
                 </div>
             </section>
         </main>
-        <!-- <footer class="footer">
+        <footer class="footer">
             <div class="container footer-container">
                 <div class="footer-contacts">
                     <div class="footer-logo bottom-logo">
@@ -318,6 +352,6 @@
                     </form>
                 </div>
             </div>
-        </footer> -->
+        </footer>
     </body>
 </html>
