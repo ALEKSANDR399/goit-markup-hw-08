@@ -227,6 +227,12 @@ ul {
   display: flex;
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts-list__mail-item {
+    padding-right: 30px;
+  }
+}
+
 .contacts-list__mail-link {
   font-weight: 500;
   font-size: 14px;
@@ -1255,7 +1261,13 @@ ul {
   cursor: pointer;
 }
 
-.modal-area__name-title {
+.modal-area,
+.modal-textarea {
+  width: 100%;
+}
+
+.modal-area__name-title,
+.modal-textarea__name-title {
   font-weight: normal;
   font-size: 12px;
   line-height: calc(14 / 12);
@@ -1263,14 +1275,16 @@ ul {
   color: var(--basic-text-color);
 }
 
-.modal-area__form-tools {
+.modal-area__form-tools,
+.modal-textarea__form-tools {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.modal-area__input {
+.modal-area__input,
+.modal-textarea__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1281,44 +1295,52 @@ ul {
   outline: none;
 }
 
-.modal-area__input:focus {
+.modal-area__input:focus,
+.modal-textarea__input:focus {
   border-color: var(--link-hover-color);
 }
 
-.modal-area__input:focus + .modal-area__username {
+.modal-area__input:focus + .modal-area__username,
+.modal-textarea__input:focus + .modal-area__username {
   fill: var(--link-hover-color);
 }
 
-.modal-area__input:focus + .modal-area__usertel {
+.modal-area__input:focus + .modal-area__usertel,
+.modal-textarea__input:focus + .modal-area__usertel {
   fill: var(--link-hover-color);
 }
 
-.modal-area__input:focus + .modal-area__useremail {
+.modal-area__input:focus + .modal-area__useremail,
+.modal-textarea__input:focus + .modal-area__useremail {
   fill: var(--link-hover-color);
 }
 
-.modal-area__username {
+.modal-area__username,
+.modal-textarea__username {
   position: absolute;
   left: 12px;
   width: 18px;
   height: 18px;
 }
 
-.modal-area__usertel {
+.modal-area__usertel,
+.modal-textarea__usertel {
   position: absolute;
   left: 12px;
   width: 18px;
   height: 18px;
 }
 
-.modal-area__useremail {
+.modal-area__useremail,
+.modal-textarea__useremail {
   position: absolute;
   left: 12px;
   width: 18px;
   height: 18px;
 }
 
-.modal-area__textarea-title {
+.modal-area__textarea-title,
+.modal-textarea__textarea-title {
   font-weight: normal;
   font-size: 12px;
   line-height: calc(14 / 12);

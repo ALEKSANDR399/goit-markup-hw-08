@@ -107,8 +107,10 @@
   // .contacts-list__mail-item
 
   &__mail-item {
-    // padding-right: 30px;
     display: flex;
+    @media screen and (min-width: 1200px) {
+      padding-right: 30px;
+    }
   }
 
   // .contacts-list__mail-link

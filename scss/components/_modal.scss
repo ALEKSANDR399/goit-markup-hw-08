@@ -134,7 +134,9 @@
   }
 }
 
-.modal-area {
+.modal-area,
+.modal-textarea {
+  width: 100%;
   // .modal-area_name-title
 
   &__name-title {
