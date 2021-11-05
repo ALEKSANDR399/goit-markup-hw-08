@@ -219,7 +219,6 @@ ul {
 @media screen and (min-width: 1200px) {
   .contacts-list {
     display: flex;
-    align-items: flex-end;
   }
 }
 
@@ -244,6 +243,12 @@ ul {
 
 .contacts-list__mail-link:hover, .contacts-list__mail-link:focus {
   color: var(--link-hover-color);
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-list__mail-link {
+    display: flex;
+  }
 }
 
 .contacts-list__mail-logo {
@@ -324,6 +329,7 @@ ul {
 }
 
 .mob-menu {
+  z-index: 3;
   position: absolute;
   background-color: #fff;
   width: 100vw;

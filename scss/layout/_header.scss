@@ -102,7 +102,7 @@
   }
   @media screen and (min-width: 1200px) {
     display: flex;
-    align-items: flex-end;
+    // align-items: flex-end;
   }
   // .contacts-list__mail-item
 
@@ -125,6 +125,9 @@
     &:hover,
     &:focus {
       color: var(--link-hover-color);
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
     }
   }
 
@@ -207,6 +210,7 @@
   }
 }
 .mob-menu {
+  z-index: 3;
   position: absolute;
   background-color: #fff;
   width: 100vw;
