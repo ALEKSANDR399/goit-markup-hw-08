@@ -175,6 +175,8 @@ ul {
 @media screen and (min-width: 1200px) {
   .block-nav {
     padding-left: 93px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
@@ -439,6 +441,7 @@ ul {
 }
 
 .hero {
+  margin: 0 auto;
   max-width: 1600px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-mob-1x.jpg);
   background-position: center;
@@ -511,13 +514,11 @@ ul {
 
 .section-skills {
   padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
   .section-skills {
     padding-top: 94px;
-    padding-bottom: 94px;
   }
 }
 
@@ -571,9 +572,9 @@ ul {
   text-align: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .skills-list__after-title {
-    margin-left: auto;
+    text-align: left;
   }
 }
 
@@ -660,6 +661,7 @@ ul {
   .section-personal__title {
     font-size: 36px;
     line-height: 1.16;
+    margin-bottom: 50px;
   }
 }
 
@@ -691,6 +693,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .personal-list__foto-item {
     flex-basis: calc(100% / 4 - 30px);
+    margin-bottom: 0px;
   }
 }
 
@@ -791,9 +794,9 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .section-partners__title {
-    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.16;
+    margin-bottom: 50px;
   }
 }
 
@@ -875,12 +878,13 @@ ul {
 
 .footer {
   background-color: var(--secondary-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 0px;
   }
 }
 
@@ -889,11 +893,13 @@ ul {
     display: flex;
     flex-wrap: wrap;
   }
+  .footer-container:last-child {
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-container {
-    display: flex;
     align-items: baseline;
     margin-top: 0;
   }
@@ -909,7 +915,7 @@ ul {
 
 @media screen and (min-width: 768px) {
   .footer-contacts {
-    margin-left: 76px;
+    margin-right: 165px;
     margin-bottom: 0px;
   }
 }
@@ -983,15 +989,21 @@ ul {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .scroll-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
   }
 }
 
@@ -1230,13 +1242,21 @@ ul {
 }
 
 .form__label-agreement {
+  width: 100%;
   font-weight: normal;
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
   color: var(--basic-text-color);
   display: flex;
   margin-bottom: 30px;
   align-items: baseline;
+}
+
+@media screen and (min-width: 1200px) {
+  .form__label-agreement {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 }
 
 .form__label-agreement span {
@@ -1248,7 +1268,12 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 14px;
+}
+
+@media screen and (min-width: 1200px) {
+  .form__label-agreement span {
+    margin-left: 14px;
+  }
 }
 
 .form__input-agreement:checked + .form__label-agreement span {
@@ -1408,20 +1433,17 @@ ul {
 
 .agreement-check__link {
   color: var(--link-hover-color);
-  margin-left: 5px;
 }
 
 .subscribe {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
   .subscribe {
-    margin: 60px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 60px;
   }
 }
 
@@ -1447,6 +1469,7 @@ ul {
 
 .subscribe__form {
   background-color: var(--secondary-color);
+  width: 100%;
 }
 
 .form {
@@ -1466,7 +1489,7 @@ ul {
 }
 
 .form__email {
-  width: 358px;
+  width: 100%;
   height: 50px;
   display: flex;
   align-items: center;
@@ -1486,7 +1509,7 @@ ul {
 
 .form__input {
   height: 50px;
-  width: 358px;
+  width: 100%;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1556,7 +1579,6 @@ ul {
 .btn-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 60px;
   margin-bottom: 40px;
 }
 
@@ -1564,14 +1586,12 @@ ul {
   .btn-list {
     display: flex;
     justify-content: center;
-    margin-top: 60px;
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .btn-list {
-    margin-top: 94px;
     margin-bottom: 34px;
   }
 }

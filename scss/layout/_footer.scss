@@ -1,8 +1,9 @@
 .footer {
   background-color: var(--secondary-color);
-  @media screen and (max-width: 1199px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0px;
   }
 }
 
@@ -10,14 +11,14 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    &:last-child {
+      align-items: center;
+    }
   }
   @media screen and (min-width: 1200px) {
-    display: flex;
     align-items: baseline;
     margin-top: 0;
   }
-  // display: flex;
-  // align-items: baseline;
 }
 
 .footer-contacts {
@@ -27,7 +28,7 @@
   justify-content: center;
   margin-bottom: 60px;
   @media screen and (min-width: 768px) {
-    margin-left: 76px;
+    margin-right: 165px;
     margin-bottom: 0px;
   }
   @media screen and (min-width: 1200px) {

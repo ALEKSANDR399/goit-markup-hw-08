@@ -89,13 +89,18 @@
   // .form_label-agreement
 
   &__label-agreement {
+    width: 100%;
     font-weight: normal;
-    font-size: 14px;
-    line-height: calc(24 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
     color: var(--basic-text-color);
     display: flex;
     margin-bottom: 30px;
     align-items: baseline;
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(24 / 14);
+    }
     & span {
       width: 16px;
       height: 15px;
@@ -105,7 +110,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-left: 14px;
+      @media screen and (min-width: 1200px) {
+        margin-left: 14px;
+      }
       .form__input-agreement:checked + & {
         background-color: var(--link-hover-color);
         border: none;
@@ -273,6 +280,6 @@
 
   &__link {
     color: var(--link-hover-color);
-    margin-left: 5px;
+    // margin-left: 5px;
   }
 }
