@@ -19,6 +19,7 @@
   @media screen and (min-width: 1200px) {
     // margin-left: 70px;
     margin-bottom: 0px;
+    align-items: flex-start;
   }
   // .social-block_title
 
@@ -29,7 +30,7 @@
     color: var(--basic-color);
     margin-bottom: 20px;
     @media screen and (min-width: 1200px) {
-      padding-left: auto;
+      justify-content: flex-start;
     }
   }
 
