@@ -18,6 +18,7 @@
   }
   @media screen and (min-width: 1200px) {
     // margin-left: 70px;
+    margin-bottom: 0px;
   }
   // .social-block_title
 
@@ -27,6 +28,9 @@
     line-height: 1.14;
     color: var(--basic-color);
     margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+      padding-left: auto;
+    }
   }
 
   // .social-block_list

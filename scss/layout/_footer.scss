@@ -2,9 +2,8 @@
   background-color: var(--secondary-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (min-width: 768px) {
-    padding-bottom: 0px;
-  }
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-container {
@@ -23,7 +22,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 60px;
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 165px;
     // margin-left: 76px;
