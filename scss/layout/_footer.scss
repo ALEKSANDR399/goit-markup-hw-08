@@ -11,9 +11,6 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    &:last-child {
-      align-items: center;
-    }
   }
   @media screen and (min-width: 1200px) {
     align-items: baseline;
@@ -27,8 +24,10 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 60px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 165px;
+    // margin-left: 76px;
+    flex-grow: 1;
     margin-bottom: 0px;
   }
   @media screen and (min-width: 1200px) {

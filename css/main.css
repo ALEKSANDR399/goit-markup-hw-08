@@ -893,9 +893,6 @@ ul {
     display: flex;
     flex-wrap: wrap;
   }
-  .footer-container:last-child {
-    align-items: center;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -913,9 +910,10 @@ ul {
   margin-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-contacts {
     margin-right: 165px;
+    flex-grow: 1;
     margin-bottom: 0px;
   }
 }
@@ -1088,24 +1086,23 @@ ul {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
+}
+
 .social-block {
   display: flex;
   flex-direction: column;
   margin-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .social-block {
-    margin-left: auto;
-    margin-right: 85px;
+    flex-grow: 1;
     margin-bottom: 0px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .social-block {
-    margin-left: 70px;
-    margin-right: 93px;
   }
 }
 
@@ -1443,7 +1440,7 @@ ul {
 
 @media screen and (min-width: 768px) {
   .subscribe {
-    margin-top: 60px;
+    flex-grow: 2;
   }
 }
 
@@ -1459,6 +1456,7 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1475,25 +1473,41 @@ ul {
 .form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .form {
     flex-direction: row;
-    margin-left: -12px;
-    align-items: flex-start;
+    width: 100%;
   }
 }
 
 .form__email {
-  width: 100%;
+  width: 61%;
   height: 50px;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .form__email {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form__email {
+    width: 358px;
+  }
 }
 
 .form__email:focus {

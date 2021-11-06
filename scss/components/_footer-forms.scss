@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   @media screen and (min-width: 768px) {
-    margin-top: 60px;
+    flex-grow: 2;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 0px;
@@ -18,6 +18,7 @@
     font-size: 14px;
     line-height: 1.14;
     margin-bottom: 20px;
+    text-align: center;
     @media screen and (min-width: 1200px) {
       margin-right: auto;
     }
@@ -33,28 +34,30 @@
 .form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
   flex-wrap: wrap;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    align-items: center;
+    justify-content: center;
+  }
   @media screen and (min-width: 1200px) {
     flex-direction: row;
-    margin-left: -12px;
-    align-items: flex-start;
+    width: 100%;
   }
   // .form_email
 
   &__email {
-    width: 100%;
+    width: 61%;
     height: 50px;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    // @media screen and (min-width: 768px) {
-    //   width: 450px;
-    // }
-    // @media screen and (min-width: 1200px) {
-    //   width: 358px;
-    // }
+    @media screen and (min-width: 768px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
     &:focus {
       border-color: var(--link-hover-color);
     }
